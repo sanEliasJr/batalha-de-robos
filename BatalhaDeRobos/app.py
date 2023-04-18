@@ -15,7 +15,7 @@ def choose_color():
     for key, value in available_colors.items():
         print(value, key)
     print(RobotTemplate.colors["White"])
-    chosen_color = input("Choose a color: ")
+    chosen_color = input("Choose a color: ").capitalize()
     color_code = available_colors[chosen_color]
     return color_code
 
