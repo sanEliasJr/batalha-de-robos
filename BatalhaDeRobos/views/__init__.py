@@ -1,0 +1,1 @@
+from .RobotTemplate import robot_art
