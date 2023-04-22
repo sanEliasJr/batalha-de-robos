@@ -1,5 +1,5 @@
 from models.PartsRobot import Part
-from views import RobotTemplate
+from strings import RobotTemplate
 
 class Robot:
     def __init__(self, name, color_code):
