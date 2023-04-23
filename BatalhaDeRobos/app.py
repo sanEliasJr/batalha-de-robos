@@ -1,4 +1,4 @@
-from game_mod import Multiplayer, Solo, Torre
+from game_mod import Multiplayer, Solo, Torre, teste
 from strings import *
 
 
@@ -12,14 +12,12 @@ while(option):
     mode = int(input("> "))        
         
     if mode == 1:
-        option = False
         Solo.play()
     elif mode == 2:
         Multiplayer.play()
     elif mode == 3:
         Torre.play()
     elif mode == 4: 
-        ...
+        teste.play_teste()
     elif mode == 5:
-        option = False
         exit()
