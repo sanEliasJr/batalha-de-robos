@@ -1,4 +1,4 @@
-from game_mod import Multiplayer, Solo, Torre, teste
+from game_mod import Multiplayer, Solo, Tower, Ranking
 from strings import *
 
 
@@ -16,8 +16,8 @@ while(option):
     elif mode == 2:
         Multiplayer.play()
     elif mode == 3:
-        Torre.play()
+        Tower.play()
     elif mode == 4: 
-        teste.play_teste()
+        Ranking.show()
     elif mode == 5:
         exit()

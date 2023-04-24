@@ -1,7 +1,6 @@
 from strings import Menus, RobotTemplate
-from models import Robot
-from utils import clean_scream, custom_sleep
-
+from models import Robot, Ranking
+from utils import clean_scream, custom_sleep, date_today
 
 from random import randint, shuffle
 
@@ -119,7 +118,7 @@ class Game:
                     playing = False
                     winner = True
                     print(f"PARABÉNS, ROBO: {enemy_robot.name} VOCÊ GANHOU!!")
-                    return winner
+                    return winner, enemy_robot.name
         
             
     def play(self, mode):
@@ -145,9 +144,13 @@ class Game:
             current_robot = list_real_player[0]
             enemy_robot = self.create_player(len(RobotTemplate.names_robot.keys()), True)
             for playing in range(1, len(enemy_robot)):
-                is_winner = self.playing(current_robot, enemy_robot[playing])
+                is_winner, name_winner = self.playing(current_robot, enemy_robot[playing])
                 if is_winner:
-                    continue
+                    try:
+                        ranking = Ranking()
+                        ranking.postRanking(name_winner,date_today())
+                    except ConnectionError as error:
+                        print("Erro de na conexão")
                 else:
                     break
 
