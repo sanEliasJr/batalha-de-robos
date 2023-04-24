@@ -3,15 +3,27 @@ from models import Robot
 from utils import clean_scream, custom_sleep
 
 
-from random import choice, randint
+from random import randint, shuffle
 
 
 class Game:
     
+    list_chosen = []
+        
+    def choice_random (self, list):
+        is_not_new_value = True
+        while(is_not_new_value):
+            shuffle(list)
+            if not list[0] in self.list_chosen:
+                self.list_chosen.append(list[0])
+                is_not_new_value = False
+                return list[0]
+    
     def build_robot(self, is_machine):
 
         if is_machine:
-            robot_name = choice(RobotTemplate.names_robot)
+            list_name_robot = list(RobotTemplate.names_robot.values())
+            robot_name = self.choice_random(list_name_robot)
             color_code = self.choose_color(True)
             robot = Robot(robot_name, color_code)
             robot.print_status()
@@ -29,8 +41,8 @@ class Game:
         if is_machine:
             available_colors = RobotTemplate.colors
             print("ROBOT ESCOLHENDO A COR:")
-            list_colors = RobotTemplate.colors.keys
-            chosen_color = choice(list(RobotTemplate.colors.keys())) # cria uma lista com todas as chaves e escolhe uma cor aleatoria desta lista  
+            list_colors = list(RobotTemplate.colors.keys())
+            chosen_color = self.choice_random(list_colors) # cria uma lista com todas as chaves e escolhe uma cor aleatoria desta lista  
             color_code = available_colors[chosen_color]
             #custom_sleep(2)
             clean_scream()
@@ -60,6 +72,7 @@ class Game:
             #custom_sleep(5)
             clean_scream()
         return list_player # TODO: Tem que desmembrar a lista para capturar o jogador
+    
     
     def playing (self,robot_one, robot_two):
         
