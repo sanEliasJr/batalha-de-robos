@@ -20,4 +20,4 @@ while(option):
     elif mode == 4: 
         Ranking.show()
     elif mode == 5:
-        exit()
+        option = False

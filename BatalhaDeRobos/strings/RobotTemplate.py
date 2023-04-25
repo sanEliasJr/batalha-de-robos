@@ -38,14 +38,13 @@ robot_art = r"""
 """
 
 colors = {
-    "Black": '\x1b[90m',
-    "Blue": '\x1b[94m',
-    "Cyan": '\x1b[96m',
-    "Green": '\x1b[92m',
+    "Preto": '\x1b[90m',
+    "Azul": '\x1b[94m',
+    "Ciano": '\x1b[96m',
+    "Verde": '\x1b[92m',
     "Magenta": '\x1b[95m',
-    "Red": '\x1b[91m',
-    "White": '\x1b[97m',
-    "Yellow": '\x1b[93m',
+    "Vermelho": '\x1b[91m',
+    "Amarelo": '\x1b[93m',
 }
 
 names_robot = {

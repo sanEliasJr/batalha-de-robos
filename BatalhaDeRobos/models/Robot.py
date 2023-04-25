@@ -22,15 +22,15 @@ class Robot:
         self.greet()
         self.print_energy()
         print(str_robot)
-        print(RobotTemplate.colors["White"])
+        print(RobotTemplate.colors["Preto"])
     
 
     def greet(self):
-        print("Hello, my name is", self.name)
+        print("Meu nome é ", self.name)
     
 
     def print_energy(self):
-        print("We have", self.energy, " percent energy left")
+        print("Eu Tenho ", self.energy, " de energia")
         
         
     def get_part_status(self):
