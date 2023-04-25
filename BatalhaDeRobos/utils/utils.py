@@ -5,7 +5,6 @@ from IPython.display import clear_output
 def clean_scream():
     clear_output(wait=True)
 
-
 def custom_sleep(secunds):
     sleep(secunds)
     

@@ -1,8 +1,12 @@
 from game_mod import Multiplayer, Solo, Tower, Ranking
 from strings import *
-
+from utils import custom_sleep
 
 print(Menus.game_cover)
+for i in Menus.history:
+    print(Menus.history[i])
+    custom_sleep(3)
+
 input(Menus.press_any_key)
 
 option = True

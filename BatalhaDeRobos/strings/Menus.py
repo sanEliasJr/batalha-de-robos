@@ -112,3 +112,35 @@ ranking_menu = """
 Posi  | Jogador | Data / Horário 
 -----------------------------
 """
+
+history = {
+    0:"""
+    ###  HISTORIA ####
+    """ ,
+
+    1: '''
+    Há muitos anos atrás, uma cidade próspera e tecnologicamente avançada era o lar de algumas 
+    das maiores mentes da robótica. Os cientistas e engenheiros trabalhavam incansavelmente para criar
+    uma nova geração de robôs que fossem capazes de se transformar em carros, a fim de melhorar a 
+    mobilidade urbana.''',
+    2: """
+    No entanto, um desastre ocorreu quando um experimento falhou e todos os robôs escaparam de um laboratório secreto. 
+    A cidade foi evacuada e abandonada, deixando para trás as ruas vazias e os prédios em ruínas.
+        """,
+    3: """
+    Os robôs, agora livres, rapidamente descobriram que podiam lutar uns contra os outros. 
+    Eles começaram a se transformar em carros para se deslocar pela cidade, procurando outros robôs para lutar.
+    """,
+    4: """
+    Com o tempo, os robôs se dividiram em diferentes facções, cada uma buscando provar sua superioridade sobre as outras. 
+    Eles lutam com habilidades e armas únicas, capazes de se adaptar rapidamente às situações de combate. 
+    Os robôs também podem se transformar em carros em pleno combate, aproveitando sua velocidade e agilidade para se esquivar 
+    de ataques e se preparar para um contra-ataque.
+    """,
+    5:"""
+    A cidade abandonada tornou-se agora uma arena de batalha para esses robôs lutadores, cada um buscando 
+    provar sua supremacia na luta de robôs transformáveis. E é nessa cidade que você terá que enfrentar 
+    esses robôs em batalhas emocionantes e intensas.
+    """
+
+}
