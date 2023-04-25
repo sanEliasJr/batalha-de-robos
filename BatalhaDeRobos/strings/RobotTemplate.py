@@ -1,40 +1,44 @@
-robot_art = r"""
-      0: {head_name}
-      ESTA DISPONIVEL: {head_status}
-      ATAQUE: {head_attack}                              
-      DEFESA: {head_defense}
-      CONSUMO DE ENERGIA: {head_energy_consump}
-              ^
-              |                  |1: {weapon_name}
-              |                  |ESTA DISPONIVEL: {weapon_status}
-     ____     |    ____          |ATAQUE: {weapon_attack}
-    |oooo|  ____  |oooo| ------> |DEFESA: {weapon_defense}
-    |oooo| '    ' |oooo|         |CONSUMO DE ENERGIA: {weapon_energy_consump}
-    |oooo|/\_||_/\|oooo|          
-    `----' / __ \  `----'           |2: {left_arm_name}
-   '/  |#|/\/__\/\|#|  \'           |ESTA DISPONIVEL: {left_arm_status}
-   /  \|#|| |/\| ||#|/  \           |ATAQUE: {left_arm_attack}
-  / \_/|_|| |/\| ||_|\_/ \          |DEFESA: {left_arm_defense}
- |_\/    O\=----=/O    \/_|         |CONSUMO DE ENERGIA: {left_arm_energy_consump}
- <_>      |=\__/=|      <_> ------> |
- <_>      |------|      <_>         |3: {right_arm_name}
- | |   ___|======|___   | |         |ESTA DIPONIVEL: {right_arm_status}
-// \\ / |O|======|O| \  //\\        |ATAQUE: {right_arm_attack}
-|  |  | |O+------+O| |  |  |        |DEFESA: {right_arm_defense}
-|\/|  \_+/        \+_/  |\/|        |CONSUMO DE ENERGIA: {right_arm_energy_consump}
-\__/  _|||        |||_  \__/        
-      | ||        || |          |4: {left_leg_name} 
-     [==|]        [|==]         |ESTA DISPONIVEL: {left_leg_status}
-     [===]        [===]         |ATAQUE: {left_leg_attack}
-      >_<          >_<          |DEFESA: {left_leg_defense}
-     || ||        || ||         |CONSUMO DE ENERGIA: {left_leg_energy_consump}
-     || ||        || || ------> |
-     || ||        || ||         |5: {right_leg_name}
-   __|\_/|__    __|\_/|__       |ESTA DIPONIVEL: {right_leg_status}
-  /___n_n___\  /___n_n___\      |ATAQUE: {right_leg_attack}
-                                |DEFESA: {right_leg_defense}
-                                |CONSUMO DE ENERGIA: {right_leg_energy_consump}
-                                
+robot_art = r""" .
+      0: {cabeça_name}
+      ESTA DISPONIVEL: {cabeça_status}
+      ATAQUE: {cabeça_attack}                              
+      DEFESA: {cabeça_defense}
+      CONSUMO DE ENERGIA: {cabeça_energy_consump}
+                  ^
+                  |                  |1: {arma_name}
+                  |                  |ESTA DISPONIVEL: {arma_status}
+                                     |ATAQUE: {arma_attack}
+                             ------> |DEFESA: {arma_defense}
+                _____                |CONSUMO DE ENERGIA: {arma_energy_consump}
+               X_____\
+       .-^-.  ||_| |_||  .-^-.
+      /_\_/_\_|  |_|  |_/_\_/_\             |2: {braço_esquerdo_name}
+      ||(_)| __\_____/__ |(_)||             |ESTA DISPONIVEL: {braço_esquerdo_status}
+      \/| | |::|\```/|::| | |\/             |ATAQUE: {braço_esquerdo_attack}
+      /`---_|::|-+-+-|::|_---'\             |DEFESA: {braço_esquerdo_defense}
+     / /  \ |::|-|-|-|::| /  \ \            |CONSUMO DE ENERGIA: {braço_esquerdo_energy_consump}
+    /_/   /|`--'-+-+-`--'|\   \_\  ----->   |  
+    | \  / |===/_\ /_\===| \  / |           |3: {braço_direito_name}
+    |  \/  /---/-/-\-\  o\  \/  |           |ESTA DISPONIVEL: {braço_direito_status}
+    | ||| | O / /   \ \   | ||| |           |ATAQUE: {braço_direito_attack}
+    | ||| ||-------------|o|||| |           |DEFESA: {braço_direito_defense}
+    | ||| ||----\ | /----|o|||| |           |CONSUMO DE ENERGIA: {braço_direito_energy_consump}
+    | _|| ||-----|||-----|o|||_ |    
+    \/|\/  |     |||     |o|\/|\/    |4: {perna_esquerda_name}
+    \_o/   |----|||||----|-' \o_/    |ESTA DISPONIVEL: {perna_esquerda_status}
+           |##  |   |  ##|           |ATAQUE: {perna_esquerda_attack}
+           |----|   |----|           |DEFESA: {perna_esquerda_defense}
+           ||__ |   | __||           |CONSUMO DE ENERGIA: {perna_esquerda_energy_consump}
+          [|'  `|] [|'  `|]  ---->   | 
+          [|`--'|] [|`--'|]          |5: {perna_direita_name}
+          /|__| |\ /| |__|\          |ESTA DISPONIVEL: {perna_direita_status}
+          ||  | || ||    ||          |ATAQUE: {perna_direita_attack}
+          ||__|_|| ||_|__||          |DEFESA: {perna_direita_defense}
+          ||    || ||    ||          |CONSUMO DE ENERGIA: {perna_direita_energy_consump}
+          \|----|/ \|----|/    
+          /______\ /______\
+          |__||__| |__||__|
+
 """
 
 colors = {

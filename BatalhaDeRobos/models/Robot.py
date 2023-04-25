@@ -7,12 +7,12 @@ class Robot:
         self.color_code = color_code
         self.energy = 100
         self.parts = [
-            Part("Head", attack_level=5, defense_level=10, energy_consumption=5),
-            Part("Weapon", attack_level=15, defense_level=0, energy_consumption=10),
-            Part("Left Arm", attack_level=3, defense_level=20, energy_consumption=10),
-            Part("Right Arm", attack_level=6, defense_level=20, energy_consumption=10),
-            Part("Left Leg", attack_level=4, defense_level=20, energy_consumption=15),
-            Part("Right Leg", attack_level=8, defense_level=20, energy_consumption=15),
+            Part("cabeça", attack_level=5, defense_level=10, energy_consumption=5),
+            Part("arma", attack_level=15, defense_level=0, energy_consumption=10),
+            Part("braço_esquerdo", attack_level=3, defense_level=20, energy_consumption=10),
+            Part("braço_direito", attack_level=6, defense_level=20, energy_consumption=10),
+            Part("perna_esquerda", attack_level=4, defense_level=20, energy_consumption=15),
+            Part("perna_direita", attack_level=8, defense_level=20, energy_consumption=15),
         ]
     
 
@@ -26,11 +26,11 @@ class Robot:
     
 
     def greet(self):
-        print("Meu nome é ", self.name)
+        print("MEU NOME É ", self.name)
     
 
     def print_energy(self):
-        print("Eu Tenho ", self.energy, "% de energia")
+        print(f"EU TENHO {self.energy}% DE ENERGIA")
         
         
     def get_part_status(self):
