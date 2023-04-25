@@ -53,7 +53,7 @@ class Game:
                 print("CORES DISPONIVEIS:")
                 for key, value in available_colors.items():
                     print(value, key)
-                print(RobotTemplate.colors["White"])
+                print(RobotTemplate.colors["Vermelho"])
                 chosen_color = input("ESCOLHA UMA COR PARA SEU ROBO:\n> ").capitalize()
                 if available_colors.get(chosen_color):
                     color_code = available_colors[chosen_color]

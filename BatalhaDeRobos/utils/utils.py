@@ -1,9 +1,9 @@
-from os import system
 from time import sleep
 from datetime import datetime
+from IPython.display import clear_output
 
 def clean_scream():
-    system('clear') or None
+    clear_output(wait=True)
 
 
 def custom_sleep(secunds):

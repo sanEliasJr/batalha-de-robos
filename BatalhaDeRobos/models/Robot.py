@@ -30,7 +30,7 @@ class Robot:
     
 
     def print_energy(self):
-        print("Eu Tenho ", self.energy, " de energia")
+        print("Eu Tenho ", self.energy, "% de energia")
         
         
     def get_part_status(self):
